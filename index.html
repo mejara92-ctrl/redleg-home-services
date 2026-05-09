@@ -3,155 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redleg Home Services | Painting, Garage Makeovers & Home Upgrades in Lawton, OK</title>
-  <meta name="description" content="Redleg Home Services provides interior painting, garage makeovers, pressure washing, junk haul cleanouts, flooring, and handyman punch-list work in Lawton, Fort Sill, Elgin, Cache, Fletcher, and surrounding areas. Call or text (580) 215-1969 for a free estimate." />
+  <title>Redleg Home Services | Lawton, OK Home Services</title>
+  <meta name="description" content="Redleg Home Services provides interior painting, garage makeovers, pressure washing, junk haul cleanouts, handyman punch-list work, flooring installs, fence and deck staining, garage floor coatings, and minor demolition in Lawton, Fort Sill, Elgin, Cache, Fletcher, and surrounding areas." />
   <meta name="theme-color" content="#0b0b0b" />
 
   <style>
     :root{
       --bg:#0b0b0b;
-      --bg2:#121212;
-      --card:#181818;
-      --card2:#f4f1ea;
-      --text:#ffffff;
-      --dark:#111111;
-      --muted:rgba(255,255,255,.72);
-      --mutedDark:rgba(17,17,17,.68);
-      --line:rgba(255,255,255,.12);
-      --lineDark:rgba(0,0,0,.12);
-      --red:#c31924;
-      --red2:#e22b32;
-      --cream:#f4f1ea;
-      --max:1180px;
-      --shadow:0 22px 70px rgba(0,0,0,.45);
-      --radius:22px;
+      --bg2:#111111;
+      --ink:#f5f5f5;
+      --muted:rgba(255,255,255,.68);
+      --card:#151515;
+      --card2:#1d1d1d;
+      --line:rgba(255,255,255,.11);
+      --red:#dc2626;
+      --red2:#ef4444;
+      --soft:#101010;
+      --max:1120px;
+      --radius:20px;
+      --shadow:0 18px 45px rgba(0,0,0,.34);
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.45;
-    }
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-    .eyebrow{color:var(--red2);font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
     .muted{color:var(--muted)}
-    .mutedDark{color:var(--mutedDark)}
     .red{color:var(--red2)}
 
-    .nav{
-      position:sticky;top:0;z-index:100;
-      background:rgba(11,11,11,.86);
-      backdrop-filter:blur(14px);
-      border-bottom:1px solid var(--line);
-    }
-    .navInner{max-width:var(--max);margin:0 auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:1000;text-transform:uppercase;letter-spacing:.04em}
-    .logoMark{width:34px;height:34px;border:2px solid var(--red);border-radius:10px;display:grid;place-items:center;color:var(--red2);font-weight:1000;transform:rotate(45deg)}
-    .logoMark span{transform:rotate(-45deg)}
-    .brand small{display:block;color:var(--muted);font-size:.68rem;letter-spacing:.18em;margin-top:-2px}
-    .links{display:flex;align-items:center;gap:22px;color:rgba(255,255,255,.78);font-weight:750;font-size:.92rem}
-    .links a:hover{color:#fff}
-    .navActions{display:flex;align-items:center;gap:10px}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,11,11,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{max-width:var(--max);margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.03em}
+    .mark{width:36px;height:36px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:900}
+    .brand span{display:block;font-size:1.04rem}.brand small{display:block;color:var(--muted);font-size:.74rem;font-weight:700;letter-spacing:.02em;margin-top:-2px}
+    nav{display:flex;align-items:center;gap:20px;color:var(--muted);font-weight:700;font-size:.94rem}
+    nav a:hover{color:#fff}
+    .navCta{display:flex;align-items:center;gap:10px}
 
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:900;white-space:nowrap;transition:.18s ease;background:rgba(255,255,255,.04)}
-    .btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.08)}
-    .btnRed{background:var(--red);border-color:var(--red);color:white;box-shadow:0 16px 36px rgba(195,25,36,.24)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:999px;border:1px solid var(--line);font-weight:850;background:#181818;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.22);white-space:nowrap}
+    .btn:hover{transform:translateY(-1px);background:#202020}
+    .btnRed{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 12px 24px rgba(220,38,38,.22)}
     .btnRed:hover{background:var(--red2)}
-    .btnLight{background:white;color:#111;border-color:white}
-    .phone{border:1px solid var(--line);padding:11px 15px;border-radius:999px;font-weight:900;background:rgba(255,255,255,.04)}
+    .phone{font-weight:900;color:#fff}
 
-    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b0b0b 0%,#111 42%,#1a0b0c 100%)}
-    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 82% 20%, rgba(195,25,36,.22), transparent 65%),radial-gradient(700px 320px at 10% 10%, rgba(255,255,255,.08), transparent 60%);pointer-events:none}
-    .heroGrid{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:76px 22px 42px;display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center;min-height:720px}
-    h1{font-size:clamp(3.1rem,7vw,6.7rem);line-height:.92;margin:16px 0 18px;letter-spacing:-.07em;font-weight:1000}
-    .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted);max-width:620px;margin:0 0 26px}
-    .heroActions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}
-    .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-    .chip{padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);font-weight:750;font-size:.9rem}
+    .hero{padding:74px 0 44px;background:radial-gradient(700px 350px at 15% 0%, rgba(220,38,38,.16), transparent 65%),linear-gradient(180deg,#111 0%,var(--bg) 100%)}
+    .heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#151515;color:var(--muted);font-weight:850;font-size:.9rem}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--red)}
+    h1{font-size:clamp(2.9rem,6vw,5.7rem);line-height:.95;letter-spacing:-.075em;margin:18px 0 18px;font-weight:950}
+    .lead{font-size:1.18rem;color:var(--muted);max-width:650px;margin:0 0 24px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+    .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.chip{padding:9px 12px;background:#151515;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-weight:750;font-size:.92rem}
 
-    .heroPhoto{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#1b1b1b;position:relative;min-height:520px}
-    .heroPhoto:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.38)),linear-gradient(135deg,rgba(195,25,36,.18),transparent 45%);z-index:1}
-    .photoMock{position:absolute;inset:0;background:linear-gradient(120deg,#151515,#2a2a2a 45%,#090909),repeating-linear-gradient(90deg,transparent 0 80px,rgba(255,255,255,.06) 81px);}
-    .garageScene{position:absolute;inset:32px;border-radius:22px;background:linear-gradient(180deg,#2b2b2b,#0c0c0c);border:1px solid rgba(255,255,255,.12);overflow:hidden}
-    .garageScene:before{content:"";position:absolute;left:8%;right:8%;top:12%;height:10px;border-radius:999px;background:rgba(255,255,255,.8);box-shadow:0 70px 0 rgba(255,255,255,.18),0 140px 0 rgba(255,255,255,.09)}
-    .garageScene:after{content:"REDLEG READY";position:absolute;left:26px;bottom:26px;font-size:2rem;font-weight:1000;letter-spacing:.02em;color:#fff}
-    .cabinet{position:absolute;bottom:0;width:22%;height:45%;background:#050505;border:1px solid rgba(255,255,255,.13)}
-    .cabinet.one{left:6%}.cabinet.two{left:31%;height:36%}.cabinet.three{right:8%;height:52%}
-    .floor{position:absolute;left:0;right:0;bottom:0;height:34%;background:radial-gradient(circle at 40% 10%,rgba(255,255,255,.34),transparent 22%),repeating-radial-gradient(circle at center,#222 0 2px,#444 3px 4px,#111 5px 8px);opacity:.9}
-    .heroBadge{position:absolute;z-index:2;left:22px;bottom:22px;background:rgba(0,0,0,.68);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:16px;max-width:300px}
-    .heroBadge strong{display:block;font-size:1.15rem}.heroBadge span{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}
+    .quoteCard{background:#151515;color:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .quoteCard:before{content:"";position:absolute;right:-80px;top:-80px;width:220px;height:220px;border-radius:50%;background:rgba(220,38,38,.28)}
+    .quoteCard h2{font-size:2rem;line-height:1.05;letter-spacing:-.045em;margin:0 0 12px}.quoteCard p{color:rgba(255,255,255,.72);margin:0 0 22px}
+    .quoteSteps{display:grid;gap:12px;margin-top:20px}.quoteStep{display:flex;gap:12px;align-items:flex-start;padding:13px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.04)}
+    .num{width:28px;height:28px;border-radius:9px;background:var(--red);display:grid;place-items:center;flex:0 0 auto;font-weight:900}.quoteStep strong{display:block}.quoteStep span{display:block;color:rgba(255,255,255,.68);font-size:.92rem;margin-top:2px}
 
-    section{padding:76px 0}
-    .light{background:var(--cream);color:#111}
-    .sectionHead{display:flex;justify-content:space-between;gap:22px;align-items:end;margin-bottom:28px}
-    .sectionHead h2{font-size:clamp(2rem,4vw,3.6rem);line-height:.96;margin:8px 0 0;letter-spacing:-.05em}
-    .sectionHead p{max-width:520px;margin:0}
+    section{padding:64px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:24px}.sectionHead h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1;letter-spacing:-.06em;margin:8px 0 0}.sectionHead p{max-width:520px;margin:0}
+    .label{color:var(--red2);font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;font-weight:900}
 
-    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .service{background:#fff;color:#111;border:1px solid var(--lineDark);border-radius:18px;overflow:hidden;box-shadow:0 14px 32px rgba(0,0,0,.08)}
-    .serviceTop{height:150px;background:linear-gradient(135deg,#252525,#777);position:relative;overflow:hidden}
-    .serviceTop:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.55),transparent 20%),linear-gradient(135deg,rgba(195,25,36,.28),transparent 45%)}
-    .serviceIcon{position:absolute;left:14px;bottom:14px;width:44px;height:44px;border-radius:14px;background:var(--red);display:grid;place-items:center;color:white;font-size:1.35rem}
-    .serviceBody{padding:18px}.service h3{margin:0 0 8px;font-size:1.1rem}.service p{margin:0;color:var(--mutedDark);font-size:.94rem}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .icon{width:42px;height:42px;border-radius:14px;background:rgba(220,38,38,.14);color:#ff6b6b;display:grid;place-items:center;font-weight:900;margin-bottom:15px}.card h3{margin:0 0 8px;font-size:1.08rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
 
-    .featureGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .featureCard{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));padding:28px;box-shadow:var(--shadow)}
-    .featureCard h3{font-size:2rem;line-height:1;margin:0 0 12px;letter-spacing:-.04em}.featureCard p{margin:0 0 20px}
-    .list{display:grid;gap:10px;margin-top:18px}.list div{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}.check{width:22px;height:22px;border-radius:50%;background:rgba(195,25,36,.16);color:#ff5960;display:grid;place-items:center;flex:0 0 auto;font-weight:900}
+    .focus{background:#101010;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .focusGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.focusCard{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}.focusCard h3{font-size:1.35rem;margin:0 0 10px}.focusCard ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:8px}.focusCard li{display:flex;gap:8px;color:var(--muted)}.check{color:var(--red2);font-weight:900}
 
-    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{padding:24px;border:1px solid var(--lineDark);border-radius:20px;background:#fff;color:#111}.num{width:42px;height:42px;border-radius:13px;background:#111;color:#fff;display:grid;place-items:center;font-weight:1000;margin-bottom:16px}.step h3{margin:0 0 8px}.step p{margin:0;color:var(--mutedDark)}
+    .avoid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.avoidBox{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}.avoidBox.dark{background:#171717;color:#fff}.avoidBox h3{margin:0 0 12px;font-size:1.4rem}.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:9px 11px;border-radius:999px;background:#222;color:var(--muted);font-weight:750;font-size:.9rem}.dark .tag{background:rgba(255,255,255,.08);color:rgba(255,255,255,.76)}
 
-    .cta{background:linear-gradient(135deg,#111,#2a0b0e);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .ctaBox{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.cta h2{font-size:clamp(2.3rem,5vw,4.8rem);line-height:.92;margin:0 0 12px;letter-spacing:-.06em}.bigPhone{font-size:clamp(2rem,4vw,3.8rem);font-weight:1000;color:white;letter-spacing:-.04em}
+    .cta{background:#111;color:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.ctaInner{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.cta h2{font-size:clamp(2.1rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em;margin:0 0 10px}.cta p{color:rgba(255,255,255,.72);margin:0}.bigPhone{font-size:1.55rem;font-weight:950;display:block;margin-bottom:12px;text-align:right}
 
-    .faqGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}details{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04);padding:18px}summary{cursor:pointer;font-weight:900;list-style:none}summary::-webkit-details-marker{display:none}details p{color:var(--muted);margin:12px 0 0}
+    footer{padding:32px 0;color:var(--muted);background:#0f0f0f;border-top:1px solid var(--line)}.footerGrid{display:grid;grid-template-columns:1fr auto;gap:20px}.footerGrid strong{color:#fff}
 
-    footer{padding:36px 0;color:var(--muted);border-top:1px solid var(--line)}.footerGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.footerBrand{color:white;font-weight:1000;text-transform:uppercase;margin-bottom:8px}.footerRight{text-align:right}
-
-    @media(max-width:980px){
-      .links,.phone{display:none}.heroGrid,.featureGrid,.ctaBox,.footerGrid{grid-template-columns:1fr}.heroGrid{padding-top:48px;min-height:auto}.heroPhoto{min-height:420px}.services{grid-template-columns:1fr 1fr}.process,.faqGrid{grid-template-columns:1fr}.sectionHead{display:block}.footerRight{text-align:left}
-    }
-    @media(max-width:560px){
-      .navInner{padding:12px 16px}.wrap{padding:0 16px}.services{grid-template-columns:1fr}.heroActions .btn{width:100%}.heroPhoto{min-height:330px}.garageScene{inset:18px}.garageScene:after{font-size:1.35rem}.navActions .btn{padding:11px 13px;font-size:.86rem}section{padding:54px 0}
-    }
+    @media(max-width:940px){.heroGrid,.focusGrid,.avoid,.ctaInner,.footerGrid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}nav,.phone{display:none}.bigPhone{text-align:left}.hero{padding-top:48px}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.actions .btn,.navCta .btn{width:100%}.nav{align-items:flex-start}.navCta{flex:1}.brand small{display:none}section{padding:48px 0}.quoteCard{padding:22px}.hero{padding-bottom:28px}}
   </style>
 </head>
 <body>
-  <header class="nav">
-    <div class="navInner">
-      <a href="#top" class="brand" aria-label="Redleg Home Services home">
-        <div class="logoMark"><span>★</span></div>
-        <div>Redleg Home Services<small>Lawton, OK</small></div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Redleg Home Services home">
+        <div class="mark">R</div>
+        <div><span>Redleg Home Services</span><small>Lawton, OK</small></div>
       </a>
-      <nav class="links" aria-label="Main navigation">
+      <nav aria-label="Main navigation">
         <a href="#services">Services</a>
-        <a href="#garages">Garages</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
+        <a href="#garages">Garage Upgrades</a>
+        <a href="#process">How It Works</a>
+        <a href="#quote">Quote</a>
       </nav>
-      <div class="navActions">
+      <div class="navCta">
         <a class="phone" href="tel:+15802151969">(580) 215-1969</a>
-        <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%20—%20I%20want%20a%20free%20estimate.%20Project%20type%3A%20%0AAddress%3A%20%0APhotos%3A%20%0ATimeline%3A">Get a Quote</a>
+        <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%2C%20I%27d%20like%20a%20quote.%0A%0AService%20needed%3A%0AAddress%3A%0APhotos%3A%0ATimeline%3A">Text to Quote</a>
       </div>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="heroGrid">
+      <div class="wrap heroGrid">
         <div>
-          <div class="eyebrow">Veteran-led home upgrades</div>
-          <h1>Quality work.<br><span class="red">Built to last.</span></h1>
-          <p class="lead">Redleg Home Services helps Lawton-area homeowners upgrade the spaces they actually use: garages, paint, floors, pressure washing, cleanouts, and punch-list projects.</p>
-          <div class="heroActions">
-            <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%20—%20I%20want%20a%20free%20estimate.%20Project%20type%3A%20%0AAddress%3A%20%0APhotos%3A%20%0ATimeline%3A">Text Photos for Estimate</a>
-            <a class="btn" href="tel:+15802151969">Call Now</a>
+          <div class="eyebrow"><span class="dot"></span> High-impact home upgrades</div>
+          <h1>Clean work for the projects you keep putting off.</h1>
+          <p class="lead">Redleg Home Services helps Lawton-area homeowners with painting, garage upgrades, pressure washing, cleanouts, flooring, and practical punch-list work.</p>
+          <div class="actions">
+            <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%2C%20I%27d%20like%20a%20quote.%0A%0AService%20needed%3A%0AAddress%3A%0APhotos%3A%0ATimeline%3A">Text Photos for a Quote</a>
+            <a class="btn" href="tel:+15802151969">Call (580) 215-1969</a>
           </div>
           <div class="trust">
             <span class="chip">Veteran-led</span>
@@ -160,101 +119,79 @@
             <span class="chip">Lawton • Fort Sill • Elgin • Cache</span>
           </div>
         </div>
-        <div class="heroPhoto" aria-label="Modern garage makeover design visual">
-          <div class="photoMock"></div>
-          <div class="garageScene"><div class="cabinet one"></div><div class="cabinet two"></div><div class="cabinet three"></div><div class="floor"></div></div>
-          <div class="heroBadge"><strong>Garage makeovers</strong><span>Painting • storage • lighting • flooring • coatings</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="light">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div><div class="eyebrow">Core services</div><h2>High-impact upgrades without overcomplicating it.</h2></div>
-          <p class="mutedDark">Simple, practical services that create visible results without huge permits, specialty equipment, or contractor chaos.</p>
-        </div>
-        <div class="services">
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">🖌️</div></div><div class="serviceBody"><h3>Interior Painting</h3><p>Bedrooms, living rooms, garage walls, accent walls, move-in refreshes, and clean repaints.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">🧰</div></div><div class="serviceBody"><h3>Garage Makeovers</h3><p>Painting, storage, organization, lighting, gym/shop layouts, snap tile, and floor coating options.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">💦</div></div><div class="serviceBody"><h3>Pressure Washing</h3><p>Driveways, sidewalks, patios, fences, siding, and exterior cleanup projects.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">🗑️</div></div><div class="serviceBody"><h3>Junk Haul & Cleanouts</h3><p>Garage cleanouts, move-out trash, storage cleanouts, yard debris, and unwanted items.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">🔨</div></div><div class="serviceBody"><h3>Punch-List Handyman</h3><p>Drywall patches, caulking, trim touchups, hardware swaps, shelves, and small repairs.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">⬛</div></div><div class="serviceBody"><h3>Flooring Installs</h3><p>Vinyl plank, snap-tile garage floors, flooring refreshes, and practical surface upgrades.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">🪵</div></div><div class="serviceBody"><h3>Fence & Deck Stain</h3><p>Fence staining, deck staining, exterior touchups, and paint/stain refreshes.</p></div></article>
-          <article class="service"><div class="serviceTop"><div class="serviceIcon">⚒️</div></div><div class="serviceBody"><h3>Minor Demolition</h3><p>Selective tear-outs, flooring removal, small demo, and cleanup when it fits the job.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="garages">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div><div class="eyebrow">Signature offer</div><h2>Turn the garage into your most useful room.</h2></div>
-          <p class="muted">The garage is where Redleg can stand out: dramatic before/after results, clear packages, and upgrades people can actually feel every day.</p>
-        </div>
-        <div class="featureGrid">
-          <div class="featureCard">
-            <h3>Garage Refresh</h3>
-            <p class="muted">A cleaner, brighter, more organized garage without turning it into a full remodel.</p>
-            <div class="list">
-              <div><span class="check">✓</span><span>Wall painting or targeted refresh</span></div>
-              <div><span class="check">✓</span><span>Lighting and storage recommendations</span></div>
-              <div><span class="check">✓</span><span>Cleanout, organization, and photo-ready finish</span></div>
-            </div>
+        <aside class="quoteCard" id="quote">
+          <h2>Get a fast quote by text.</h2>
+          <p>Send a few photos, your address, and what you want done. We’ll help you figure out the cleanest scope.</p>
+          <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%2C%20I%27d%20like%20a%20quote.%0A%0AService%20needed%3A%0AAddress%3A%0APhotos%3A%0ATimeline%3A">Text to Quote</a>
+          <div class="quoteSteps">
+            <div class="quoteStep"><div class="num">1</div><div><strong>Tell us the project</strong><span>Painting, garage, pressure washing, cleanout, flooring, or repairs.</span></div></div>
+            <div class="quoteStep"><div class="num">2</div><div><strong>Send photos</strong><span>Photos make the quote faster and more accurate.</span></div></div>
+            <div class="quoteStep"><div class="num">3</div><div><strong>Get a clear scope</strong><span>No vague contractor chaos. Just what’s included and what happens next.</span></div></div>
           </div>
-          <div class="featureCard">
-            <h3>Garage Upgrade Package</h3>
-            <p class="muted">For homeowners who want a garage gym, workshop, storage zone, man cave, or cleaner utility space.</p>
-            <div class="list">
-              <div><span class="check">✓</span><span>Paint, lighting, floor upgrades, cabinets, and storage</span></div>
-              <div><span class="check">✓</span><span>Snap-tile or floor coating options</span></div>
-              <div><span class="check">✓</span><span>Designed around how you actually use the space</span></div>
-            </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="label">Services</div><h2>What we do</h2></div>
+          <p class="muted">A focused list of common home services with strong before/after value and practical execution.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><div class="icon">01</div><h3>Interior Painting</h3><p>Rooms, walls, trim, doors, accent walls, garages, move-in refreshes, and repaint projects.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Garage Makeovers</h3><p>Garage painting, lighting, storage, organization, gym/man cave conversions, snap tile, and coatings.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Pressure Washing</h3><p>Driveways, sidewalks, patios, fences, siding, and exterior cleanup.</p></article>
+          <article class="card"><div class="icon">04</div><h3>Junk Haul & Cleanouts</h3><p>Garage cleanouts, move-out trash, storage cleanouts, yard debris, and unwanted items.</p></article>
+          <article class="card"><div class="icon">05</div><h3>Handyman Punch-List</h3><p>Drywall patches, caulking, trim touchups, door hardware, shelves, fixtures, and small repairs.</p></article>
+          <article class="card"><div class="icon">06</div><h3>Flooring Installs</h3><p>Vinyl plank, snap-tile garage floors, and simple flooring refreshes.</p></article>
+          <article class="card"><div class="icon">07</div><h3>Fence & Deck Stain/Paint</h3><p>Fence staining, deck staining, and exterior paint or stain refreshes.</p></article>
+          <article class="card"><div class="icon">08</div><h3>Selective Minor Demo</h3><p>Small tear-outs, flooring removal, cabinet removal, and demo tied to upgrade projects.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="focus" id="garages">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div><div class="label">Best fit projects</div><h2>Simple services. Big visual impact.</h2></div>
+          <p class="muted">The goal is not to be a random handyman company. The goal is high-impact home upgrades with strong before/after transformations.</p>
+        </div>
+        <div class="focusGrid">
+          <div class="focusCard"><h3>Garage Upgrades</h3><p class="muted">A strong signature offer for Redleg.</p><ul><li><span class="check">✓</span>Paint, lights, storage, organization</li><li><span class="check">✓</span>Snap tile or floor coating options</li><li><span class="check">✓</span>Gym, workshop, or clean utility layout</li></ul></div>
+          <div class="focusCard"><h3>Paint + Punch List</h3><p class="muted">Easy to understand and easy to quote from photos.</p><ul><li><span class="check">✓</span>Interior paint</li><li><span class="check">✓</span>Drywall patches and caulking</li><li><span class="check">✓</span>Move-in or refresh projects</li></ul></div>
+          <div class="focusCard"><h3>Cleanup + Exterior</h3><p class="muted">Fast, practical jobs that pair well together.</p><ul><li><span class="check">✓</span>Pressure washing</li><li><span class="check">✓</span>Junk haul and cleanouts</li><li><span class="check">✓</span>Fence and deck staining</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap avoid">
+        <div class="avoidBox">
+          <h3>Good-fit work</h3>
+          <div class="tags">
+            <span class="tag">Painting</span><span class="tag">Garages</span><span class="tag">Pressure washing</span><span class="tag">Cleanouts</span><span class="tag">Flooring</span><span class="tag">Punch-list work</span><span class="tag">Fence/deck stain</span><span class="tag">Minor demo</span>
+          </div>
+        </div>
+        <div class="avoidBox dark">
+          <h3>Work we avoid early</h3>
+          <div class="tags">
+            <span class="tag">Roofing</span><span class="tag">Major electrical</span><span class="tag">HVAC</span><span class="tag">Plumbing</span><span class="tag">Structural framing</span><span class="tag">Tile showers</span><span class="tag">Foundation work</span><span class="tag">Large concrete pours</span><span class="tag">Complex cabinetry</span><span class="tag">Full custom remodels</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="process" class="light">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div><div class="eyebrow">Simple process</div><h2>Text photos. Get a scope. Get it done.</h2></div>
-          <p class="mutedDark">The fastest way to quote most projects is with clear photos, address, project goal, and timeline.</p>
-        </div>
-        <div class="process">
-          <div class="step"><div class="num">1</div><h3>Send photos</h3><p>Text the project area, address, and what you want done.</p></div>
-          <div class="step"><div class="num">2</div><h3>Confirm scope</h3><p>We confirm what is realistic, what it costs, and what materials are needed.</p></div>
-          <div class="step"><div class="num">3</div><h3>Schedule work</h3><p>Local crew completes the job with clear communication and cleanup.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="wrap ctaBox">
+    <section class="cta" id="process">
+      <div class="wrap ctaInner">
         <div>
-          <div class="eyebrow">Free estimates</div>
-          <h2>Ready to start your project?</h2>
-          <p class="muted">Text photos and a short description. We’ll help you price the smartest version of the project.</p>
+          <div class="label">Free estimates</div>
+          <h2>Ready to get a project priced?</h2>
+          <p>Text photos, the service you need, your address, and your ideal timeline.</p>
         </div>
         <div>
           <a class="bigPhone" href="tel:+15802151969">(580) 215-1969</a>
-          <div style="height:14px"></div>
-          <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%20—%20I%20want%20a%20free%20estimate.%20Project%20type%3A%20%0AAddress%3A%20%0APhotos%3A%20%0ATimeline%3A">Text for Estimate</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div><div class="eyebrow">FAQ</div><h2>Quick answers.</h2></div>
-        </div>
-        <div class="faqGrid">
-          <details open><summary>What areas do you serve?</summary><p>Lawton, Fort Sill, Elgin, Cache, Fletcher, and nearby communities.</p></details>
-          <details><summary>Do you only do garages?</summary><p>No. Garages are a key focus, but we also handle painting, pressure washing, flooring, cleanouts, and punch-list handyman work.</p></details>
-          <details><summary>Do you do electrical, HVAC, or plumbing?</summary><p>We avoid major licensed trades unless a properly licensed professional is involved. We focus on practical, lower-risk home upgrades.</p></details>
-          <details><summary>How do I get the fastest quote?</summary><p>Text photos, address, project type, and timeline to (580) 215-1969.</p></details>
+          <a class="btn btnRed" href="sms:+15802151969?&body=Hi%20Redleg%20Home%20Services%2C%20I%27d%20like%20a%20quote.%0A%0AService%20needed%3A%0AAddress%3A%0APhotos%3A%0ATimeline%3A">Text to Quote</a>
         </div>
       </div>
     </section>
@@ -262,14 +199,8 @@
 
   <footer>
     <div class="wrap footerGrid">
-      <div>
-        <div class="footerBrand">Redleg Home Services</div>
-        <div>High-impact home upgrades with strong before/after transformations.</div>
-      </div>
-      <div class="footerRight">
-        <div><a href="https://redleghomeservices.com">redleghomeservices.com</a></div>
-        <div><a href="tel:+15802151969">(580) 215-1969</a></div>
-      </div>
+      <div><strong>Redleg Home Services</strong><br>High-impact home upgrades with strong before/after transformations.</div>
+      <div><a href="https://redleghomeservices.com">redleghomeservices.com</a><br><a href="tel:+15802151969">(580) 215-1969</a></div>
     </div>
   </footer>
 </body>
